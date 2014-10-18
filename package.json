@@ -1,0 +1,27 @@
+{
+  "name": "long_shadow_generator",
+  "version": "0.0.1",
+  "description": "Long shadow generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bdeepakreddy/long_shadow_generator.git"
+  },
+  "keywords": [
+    "long",
+    "shadow",
+    "generator"
+  ],
+  "author": "",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/bdeepakreddy/long_shadow_generator/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-sass": "~0.8.1"
+  }
+}
