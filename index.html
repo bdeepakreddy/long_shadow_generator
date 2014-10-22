@@ -7,31 +7,37 @@
 	<div class="box vc">		
 		<div class="centered">
 			<!-- <img src="img/square.png" class="icon"> -->
-			<span class="icon"><i class="fa fa-cog fa-lg"></i></span>
+			<span class="icon"><i class="fa fa-calendar fa-lg"></i></span>
 		</div>
 	</div>
+	<form action="#">
+		<label for="angle"><span>Angle</span><input type="number" name="angle"></label>
+		<label for="depth"><span>Depth</span><input type="number" name="depth"></label>
+		<label for="color"><span>Color</span><input type="color" name="color"></label>
+		
+	</form>
+	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript">
+		
+		var angle = 135;
+		angle = angle - 90;
+		var x = 1.5 * Math.cos(angle * Math.PI/180);
+		var y = 1.5 * Math.sin(angle * Math.PI/180);	
+		var depth = 80;
+
+		var num_x= Math.abs(x);
+		x= Math.abs(x);
+		var num_y= y;
+
+		var long_shadow = "";
+		for (var i = 1; i <= depth; i++) {
+			long_shadow += ' ' + x + 'px ' + y + 'px '+ 0 + ' '+ '#D25600,';
+			x+=num_x;
+			y+=num_y;				
+		}
+
+		long_shadow = long_shadow.substr(0, long_shadow.length-1);
+		$('.icon').css('text-shadow', long_shadow);
+	</script>
 </body>
-<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-<script type="text/javascript">
-	
-	var angle = 135;
-	angle = angle - 90;
-	var x = 1.5 * Math.cos(angle * Math.PI/180);
-	var y = 1.5 * Math.sin(angle * Math.PI/180);	
-	var depth = 10;
-
-	var num_x= Math.abs(x);
-	x= Math.abs(x);
-	var num_y= y;
-
-	var long_shadow = "";
-	for (var i = 1; i <= depth; i++) {
-		long_shadow += ' ' + x + 'px ' + y + 'px '+ 0 + ' '+ '#1baabd,';
-		x+=num_x;
-		y+=num_y;				
-	}
-
-	long_shadow = long_shadow.substr(0, long_shadow.length-1);
-	$('.icon').css('text-shadow', long_shadow);
-</script>
 </html>
