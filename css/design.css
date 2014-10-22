@@ -262,18 +262,20 @@ body{
 #holder{ margin:25px; }
 
 .icon_grid{ 
-  display:inline-block; 
-  min-width:14px;
-  height:14px;
-  line-height: 16px;
-  margin:0 5px 5px 0;
-  background:#eee;
-  color:#666; /* Icon Color */
-  font-size: 10pt;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius:5px;
-  padding:10px;
+    display: inline-block;
+    width: 32px;
+    padding-top: 10px;
+    vertical-align: middle;
+    height: 24px;
+    text-align: center;
+    line-height: 16px;
+    margin: 0 5px 5px 0;
+    background: #eee;
+    color: #666;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 .icons{ 
