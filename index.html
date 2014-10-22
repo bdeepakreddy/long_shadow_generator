@@ -1,29 +1,333 @@
 <html>
 <head>
-	<title></title>
+	<title>Long Shadow Generator</title>
+	<link rel="stylesheet" type="text/css" href="css/colpick.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/design.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">	
+	<link rel="stylesheet" type="text/css" href="css/dropzone.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<div class="box vc">		
-		<div class="centered">
-			<!-- <img src="img/square.png" class="icon"> -->
-			<span class="icon"><i class="fa fa-calendar fa-lg"></i></span>
+	
+	<div class="main_container">
+		<div class="control_section">
+			<div class="section group">
+				<div class="col span_1_of_6">
+					<div class="shape_picker">
+						<div class="color_picker_title"><span>BORDER RADIUS</span></div>
+						<div class="color_pic shape_pic"><input type="number" value="0" id="radius_picker" placeholder="5"/></div>						
+					</div>
+				</div>
+				<div class="col span_1_of_6">
+					<div class="shadow_picker">
+						<div class="color_picker_title"><span>SHADOW ANGLE</span></div>
+						<div class="color_pic shape_pic"><input type="number" value="132" id="angle_picker" placeholder="132"/></div>						
+					</div>
+				</div>
+				<div class="col span_1_of_6">
+					<div class="color_picker">
+						<div class="color_picker_title"><span>BACKGROUND</span></div>
+						<div class="color_pic"><input type="text" value="df4638" id="bg_picker"/></div>						
+					</div>					
+				</div>
+				<div class="col span_1_of_6">					
+					<div class="color_picker">
+						<div class="color_picker_title"><span>ICON COLOR</span></div>
+						<div class="color_pic"><input type="text" value="ffffff" id="icon_picker"/></div>
+					</div>
+				</div>
+				<div class="col span_1_of_6">					
+					<div class="color_picker">
+						<div class="color_picker_title"><span>SHADOW COLOR</span></div>
+						<div class="color_pic"><input type="text" value="aa2e22" id="shadow_picker"/></div>
+					</div>
+				</div>
+				<div class="col span_1_of_6">
+					<div class="depth_picker">
+						<div class="color_picker_title"><span>DEPTH</span></div>
+						<div class="color_pic"><input type="number" id="depth_picker" value="100" placeholder="100"/></div>
+					</div>
+				</div>
+			</div>
+			<div class="main_content">
+				<div class="col span_1_of_3">
+					<div class="font_awesome_icons">
+						<div id="holder">							
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-bus"></i></a>
+							<a href="#" class="icon_grid"><i class="fa fa-anchor"></i></a>
+						</div> 						
+					</div>
+				</div>
+				<div class="col span_1_of_3">
+					<div class="drop_image">
+						<form action="upload.php" method="post" enctype="multipart/form-data" class="dropzone">
+						  <div class="fallback">
+						    <input name="file" type="file" multiple />
+						  </div>
+						</form>
+					</div>
+				</div>
+				<div class="col span_1_of_3">
+					<div class="result_icon">
+						<div class="box vc">		
+							<div class="centered">			
+								<span class="icon"><i class="fa fa-cog fa-lg"></i></span>
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>				
 		</div>
 	</div>
-	<form action="#">
-		<label for="angle"><span>Angle</span><input type="number" name="angle"></label>
-		<label for="depth"><span>Depth</span><input type="number" name="depth"></label>
-		<label for="color"><span>Color</span><input type="color" name="color"></label>
-		
-	</form>
-	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript">
-		
-		var angle = 135;
+	<!--<div class="box vc">		
+		<div class="centered">			
+			<span class="icon"><i class="fa fa-cog fa-lg"></i></span>
+		</div>
+	</div>-->
+</body>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/colpick.js"></script>
+<script type="text/javascript" src="js/dropzone.min.js"></script>
+
+<script type="text/javascript">
+	colorChanged();
+
+	$( '#radius_picker, #angle_picker, #depth_picker' ).change(function() {
+	  colorChanged();
+	});
+
+	var bg_color = "";
+	var shadow_color="";
+	var icon_color="";
+	var angle;
+	var depth;
+	var border_radius = 0;
+
+	function colorChanged(){
+		bg_color = $("#bg_picker").val();
+		shadow_color = $("#shadow_picker").val();
+		icon_color = $("#icon_picker").val();
+
+		angle = $("#angle_picker").val();
+		border_radius = $("#radius_picker").val();
+		depth = $("#depth_picker").val();
+
+		border_radius = border_radius+'%';
+		bg_color = '#'+bg_color;
+		icon_color = '#'+icon_color;
+		shadow_color = '#'+shadow_color;
+
 		angle = angle - 90;
 		var x = 1.5 * Math.cos(angle * Math.PI/180);
-		var y = 1.5 * Math.sin(angle * Math.PI/180);	
-		var depth = 80;
+		var y = 1.5 * Math.sin(angle * Math.PI/180);		
 
 		var num_x= Math.abs(x);
 		x= Math.abs(x);
@@ -31,13 +335,67 @@
 
 		var long_shadow = "";
 		for (var i = 1; i <= depth; i++) {
-			long_shadow += ' ' + x + 'px ' + y + 'px '+ 0 + ' '+ '#D25600,';
+			long_shadow += ' ' + x + 'px ' + y + 'px '+ 0 + ' '+ shadow_color + ',';
 			x+=num_x;
 			y+=num_y;				
 		}
 
 		long_shadow = long_shadow.substr(0, long_shadow.length-1);
+
+		$('.box').css({borderRadius:border_radius});
 		$('.icon').css('text-shadow', long_shadow);
-	</script>
-</body>
+		$('.box').css('background-color', bg_color);
+		$('.icon').css('color', icon_color);
+	}	
+
+	$('.icon_grid').click(function(){
+		var selectedIcon = $(this).html(); 
+		$('.icon').empty();
+   		$('.icon').append(selectedIcon);
+	});
+	
+	$('.result_icon').click(function(){
+		alert($('.result_icon').html());
+	})
+</script>
+<script type="text/javascript">
+	$('#bg_picker').colpick({
+		layout:'hex',
+		submit:0,
+		colorScheme:'dark',
+		onChange:function(hsb,hex,rgb,el,bySetColor) {
+			$(el).css('border-color','#'+hex);
+			// Fill the text box just if the color was set using the picker, and not the colpickSetColor function.
+			if(!bySetColor) $(el).val(hex);
+		}
+	}).keyup(function(){
+		$(this).colpickSetColor(this.value);
+	});
+
+	$('#icon_picker').colpick({
+		layout:'hex',
+		submit:0,
+		colorScheme:'dark',
+		onChange:function(hsb,hex,rgb,el,bySetColor) {
+			$(el).css('border-color','#'+hex);
+			// Fill the text box just if the color was set using the picker, and not the colpickSetColor function.
+			if(!bySetColor) $(el).val(hex);
+		}
+	}).keyup(function(){
+		$(this).colpickSetColor(this.value);
+	});
+
+	$('#shadow_picker').colpick({
+		layout:'hex',
+		submit:0,
+		colorScheme:'dark',
+		onChange:function(hsb,hex,rgb,el,bySetColor) {
+			$(el).css('border-color','#'+hex);
+			// Fill the text box just if the color was set using the picker, and not the colpickSetColor function.
+			if(!bySetColor) $(el).val(hex);
+		}
+	}).keyup(function(){
+		$(this).colpickSetColor(this.value);
+	});
+</script>
 </html>
