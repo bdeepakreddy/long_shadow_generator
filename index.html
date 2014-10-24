@@ -725,7 +725,7 @@
 				</div>
 				<div class="col span_1_of_3">
 					<div class="drop_image">
-						<form action="upload.php" method="post" enctype="multipart/form-data" class="dropzone">
+						<form action="upload.php" method="post" enctype="multipart/form-data" class="dropzone" id="dropZoneUpload">
 						  <div class="fallback">
 						    <input name="file" type="file" multiple />
 						  </div>
@@ -873,5 +873,25 @@
 		    // TODO: do something with the value
 		});
 	});
+</script>
+<script>
+	Dropzone.options.dropZoneUpload = {
+	  paramName: "file", // The name that will be used to transfer the file
+	  maxFilesize: 2, // MB
+	  addRemoveLinks: true,
+	  init: function() {
+	  	this.on("removedfile", function(file) {
+	  		_fileDelete(file);
+	  	});
+
+	  }
+	};
+	function _fileDelete(file) {
+		$.ajax({
+		  		type: "POST",
+		  		url: "delete.php",
+		  		data: {file: file}
+		  	});
+	}
 </script>
 </html>
