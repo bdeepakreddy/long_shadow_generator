@@ -1,0 +1,47 @@
+{
+  "checksum": {
+    "previous": "0ca31e0a697bb09b47120776c722b5153746c920189b3b2436918f36d2459c0c",
+    "current": "0ca31e0a697bb09b47120776c722b5153746c920189b3b2436918f36d2459c0c"
+  },
+  "fonts": [
+    "generated/fonts//fontcustom_0ca31e0a697bb09b47120776c722b515.ttf",
+    "generated/fonts//fontcustom_0ca31e0a697bb09b47120776c722b515.svg",
+    "generated/fonts//fontcustom_0ca31e0a697bb09b47120776c722b515.woff",
+    "generated/fonts//fontcustom_0ca31e0a697bb09b47120776c722b515.eot"
+  ],
+  "glyphs": {
+    "thumbnail": {
+      "codepoint": 61696,
+      "source": "uploads/thumbnail.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": "fontcustom.yml",
+    "css_selector": ".icon-{{glyph}}",
+    "debug": false,
+    "font_name": "fontcustom",
+    "force": false,
+    "input": {
+      "templates": "uploads",
+      "vectors": "uploads"
+    },
+    "no_hash": false,
+    "output": {
+      "css": "generated/stylesheets",
+      "fonts": "generated/fonts/",
+      "preview": "generated/views/styleguide"
+    },
+    "preprocessor_path": "",
+    "quiet": false,
+    "skip_first": false,
+    "templates": [
+      "scss",
+      "preview"
+    ]
+  },
+  "templates": [
+    "generated/stylesheets/_fontcustom.scss",
+    "generated/views/styleguide/fontcustom-preview.html"
+  ]
+}
