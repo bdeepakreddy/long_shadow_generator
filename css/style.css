@@ -18,8 +18,11 @@
 .box {
   width: 200px;
   height: 200px;
-  background-color: red;
+  background-color: #df4638;
   overflow: hidden;
+  display: block;
+  margin: 0 auto;
+  vertical-align: middle;
 }
 
 .icon {
@@ -27,8 +30,8 @@
   vertical-align: middle;
   width: 50px;
   height: 50px;
-  background-color: green;
-  box-shadow: -1.06066px 1.06066px 0 #1baabd, -2.12132px 2.12132px 0 #1baabd, -3.18198px 3.18198px 0 #1baabd, -4.24264px 4.24264px 0 #1baabd, -5.3033px 5.3033px 0 #1baabd, -6.36396px 6.36396px 0 #1baabd, -7.42462px 7.42462px 0 #1baabd, -8.48528px 8.48528px 0 #1baabd, -9.54594px 9.54594px 0 #1baabd, -10.6066px 10.6066px 0 #1baabd, -11.66726px 11.66726px 0 #1baabd, -12.72792px 12.72792px 0 #1baabd, -13.78858px 13.78858px 0 #1baabd, -14.84924px 14.84924px 0 #1baabd, -15.9099px 15.9099px 0 #1baabd, -16.97056px 16.97056px 0 #1baabd, -18.03122px 18.03122px 0 #1baabd, -19.09188px 19.09188px 0 #1baabd, -20.15254px 20.15254px 0 #1baabd, -21.2132px 21.2132px 0 #1baabd, -22.27386px 22.27386px 0 #1baabd, -23.33452px 23.33452px 0 #1baabd, -24.39518px 24.39518px 0 #1baabd, -25.45584px 25.45584px 0 #1baabd, -26.5165px 26.5165px 0 #1baabd, -27.57716px 27.57716px 0 #1baabd, -28.63782px 28.63782px 0 #1baabd, -29.69848px 29.69848px 0 #1baabd, -30.75914px 30.75914px 0 #1baabd, -31.81981px 31.81981px 0 #1baabd, -32.88047px 32.88047px 0 #1baabd, -33.94113px 33.94113px 0 #1baabd, -35.00179px 35.00179px 0 #1baabd, -36.06245px 36.06245px 0 #1baabd, -37.12311px 37.12311px 0 #1baabd, -38.18377px 38.18377px 0 #1baabd, -39.24443px 39.24443px 0 #1baabd, -40.30509px 40.30509px 0 #1baabd, -41.36575px 41.36575px 0 #1baabd, -42.42641px 42.42641px 0 #1baabd, -43.48707px 43.48707px 0 #1baabd, -44.54773px 44.54773px 0 #1baabd, -45.60839px 45.60839px 0 #1baabd, -46.66905px 46.66905px 0 #1baabd, -47.72971px 47.72971px 0 #1baabd, -48.79037px 48.79037px 0 #1baabd, -49.85103px 49.85103px 0 #1baabd, -50.91169px 50.91169px 0 #1baabd, -51.97235px 51.97235px 0 #1baabd, -53.03301px 53.03301px 0 #1baabd, -54.09367px 54.09367px 0 #1baabd, -55.15433px 55.15433px 0 #1baabd, -56.21499px 56.21499px 0 #1baabd, -57.27565px 57.27565px 0 #1baabd, -58.33631px 58.33631px 0 #1baabd, -59.39697px 59.39697px 0 #1baabd, -60.45763px 60.45763px 0 #1baabd, -61.51829px 61.51829px 0 #1baabd, -62.57895px 62.57895px 0 #1baabd, -63.63961px 63.63961px 0 #1baabd;
+  font-size: 100px;
+  color: #fff;
 }
 
 .font-gen {

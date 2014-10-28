@@ -731,7 +731,7 @@
 						  </div>
 						</form>
 					</div>
-					<div class="button font-gen">Generate font</div>
+					<div class="button font-gen" id="fontGenerator">Generate font</div>
 					<!-- /.button font-gen -->
 				</div>
 				<div class="col span_1_of_3">
@@ -895,5 +895,16 @@
 		  		data: {file: file}
 		  	});
 	}
+</script>
+<script>
+	$("#fontGenerator").click(function() {
+		$.ajax({
+			type: "POST",
+			url: "commands.php?command=generate",
+		})
+		.done (function(msg) {
+			alert(msg);
+		});
+	});
 </script>
 </html>
